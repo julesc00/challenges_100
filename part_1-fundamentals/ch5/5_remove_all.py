@@ -44,3 +44,6 @@ def collect_all_v3(values: list, condition) -> list:
 if __name__ == "__main__":
     print(remove_all(["a", "a", "b"], "a"))
     print(remove_all_v2(["a", "a", "b"], "a"))
+    names = ["Cari", "Jemi", "Luli", "Luli", "Luli"]
+    print(collect_all_v2(names, lambda val: val == "Luli"))
+    print(collect_all_v3(names, lambda value: value == "Luli"))

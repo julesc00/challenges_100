@@ -13,31 +13,3 @@ print(f"""
     sym diff: {number_set1 ^ number_set2}
 """)
 
-
-"""
-5.1.4 Key-value mappings (Dictionaries)
-"""
-
-my_dict = {"name": "Jemima"}
-my_dict["middle_name"] = "Eloise"
-user_card = {"city": "Los Angeles"}
-print(my_dict)
-user_card.update(my_dict)
-print(user_card)
-for k, v in user_card.items():
-    print(k, v)
-
-
-def update_user_data() -> dict:
-    try:
-        user_card.pop("country")
-    except KeyError as error:
-        print(f"[ERROR] Entry: {error} not found!")
-    return user_card
-
-
-print(update_user_data())
-
-
-# Filtering elements of a dictionary in a general way.
-def filter_dict(input_dickt, key_value_condition)
